@@ -16,7 +16,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 30px;
     align-items: center;
 }
 
@@ -34,15 +34,19 @@ header {
 
 .safety-icon {
     color: #23d959;
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
     margin: 0 10px;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 2em;
 }
 
 .recording-status {
-    padding: 5px;
+    padding: 10px;
+}
+
+.recording-status i {
+    margin-right: 5px;
 }
 
 .header-right {
@@ -50,4 +54,121 @@ header {
     margin-right: 5px;
     padding: 5px;
     border-radius: 5px;
+}
+
+.header-right i {
+    vertical-align: middle;
+    color: #d2d2d2;
+}
+
+/* main */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 80px);
+}
+
+.back-btn {
+    display: flex;
+    position: relative;
+    width: 50px;
+    height: 100px;
+    background-color: #0b0b0b;
+    border: 2px solid #000000;
+}
+
+.back-btn i {
+    font-size: 3em;
+    color: #2db8ff;
+    margin: auto;
+}
+
+.page-num {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%);
+    color: #7f7e7e;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+}
+
+.portrait {
+    position: relative;
+    width: calc((100% - 20px) / 5);
+    height: calc((100% - 50px) / 5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.portrait img {
+    width: 100%;
+}
+
+.portrait .text-box {
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    background-color: #00000050;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.portrait .text-box i {
+    color: #ff5c5c;
+}
+
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #222426;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+    color: #aaabac;
+}
+
+footer ul li {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+footer ul li i {
+    font-size: 1.3em;
+}
+
+footer .media-control li::before, .bottom-nav li:nth-child(2)::before, .bottom-nav li:nth-child(4)::before{
+    position: absolute;
+    left: 90%;
+    font-family: "Font Awesome 5 Free";
+    content: '\f106';
+    font-weight: 900;
+}
+
+.bottom-nav li:nth-child(4) {
+    color: #23d959;
+}
+
+footer button {
+    background-color: #e02828;
+    color: #ffffff;
+    padding: 5px 25px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 20px;
 }
